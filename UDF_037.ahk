@@ -2593,6 +2593,27 @@ getClosestPlayerId() {
     return id
 }
 
+getClosestPlayerIdM() {
+    dist := 0x16              ;max int32
+    p := getStreamedInPlayersInfo()
+	if(!p)
+		return -1
+    lpos := getCoordinates()
+    if(!lpos)
+        return -1
+	id := -1
+    For i, o in p
+    {
+        t:=getDist(lpos,o.POS)
+        if(t<dist)
+        {
+            dist := t
+            id := i
+        }
+    }
+    return id
+}
+
 CountOnlinePlayers() {
 if(!checkHandles())
 return -1
