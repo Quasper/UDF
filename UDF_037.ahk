@@ -11,9 +11,9 @@
 ; https://github.com/agrippa1994
 ; Modified by: RawDev and ELon
 ; Do not remove these lines.
-; Р”РѕР±Р°РІР»РµРЅ SA-MP-UDF-Addon by [CM}MurKotik
+; Р вЂќР С•Р В±Р В°Р Р†Р В»Р ВµР Р… SA-MP-UDF-Addon by [CM}MurKotik
 ; VK: http://vk.com/id350689538
-; Р”РѕР±Р°РІР»РµРЅ SA-MP-UDF-Addon by McFree
+; Р вЂќР С•Р В±Р В°Р Р†Р В»Р ВµР Р… SA-MP-UDF-Addon by McFree
 ; VK: https://vk.com/mcfreeman
 ; ####################
 
@@ -195,12 +195,12 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; ###############################################################################################################################
 ; # 														                                                                    #
 ; # SAMP-Funktionen:                                                                                                            #
-; #     - IsSAMPAvailable()                         PrР“С“Р’Сft, ob man in den Chat schreiben kann & ob GTA geladen ist            #
-; #     - isInChat()                                PrР“С“Р’Сft, ob der Spieler gerade chattet oder in einem Dialog ist            #
+; #     - IsSAMPAvailable()                         PrР вЂњРЎвЂњР вЂ™РЎВft, ob man in den Chat schreiben kann & ob GTA geladen ist            #
+; #     - isInChat()                                PrР вЂњРЎвЂњР вЂ™РЎВft, ob der Spieler gerade chattet oder in einem Dialog ist            #
 ; #     - getUsername()                             Liest den Namen des Spielers aus                                            #
 ; #     - getId()                                   Liest die Id des Spielers aus                                               #
 ; #     - SendChat(wText)                           Sendet eine Nachricht od. einen Befehl direkt an den Server                 #
-; #     - addChatMessage(wText)                     FР“С“Р’Сgt eine Zeile in den Chat ein (nur fР“С“Р’Сr den Spieler sichtbar)        #
+; #     - addChatMessage(wText)                     FР вЂњРЎвЂњР вЂ™РЎВgt eine Zeile in den Chat ein (nur fР вЂњРЎвЂњР вЂ™РЎВr den Spieler sichtbar)        #
 ; #     - showGameText(wText, dwTime, dwTextsize)   Zeigt einen Text inmitten des Bildschirmes an  					            #
 ; #     - playAudioStream(wUrl)                     Spielt einen "Audio Stream" ab                                              #
 ; #     - stopAudioStream()                         Stoppt den aktuellen Audio Stream                                           #
@@ -228,17 +228,17 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; ###############################################################################################################################
 ; # SAMP Dialog Funktionen (v0.3.7):																	                        #
 ; # --------------------------------------------------------------------------------------------------------------------------- #
-; #	- isDialogOpen() - PrР“Сft, ob gerade ein Dialog angezeigt wird (gibt true oder false zurР“Сck)	                       		#
+; #	- isDialogOpen() - PrР вЂњРЎВft, ob gerade ein Dialog angezeigt wird (gibt true oder false zurР вЂњРЎВck)	                       		#
 ; #	- getDialogStyle() - Liest den Typ des (zuletzt) angezeigten Dialogs aus (0-5)                      						#
 ; #	- getDialogID() - Liest die ID des (zuletzt) angezeigten Dialogs aus (auch vom Server)	                        			#
 ; #	- setDialogID(id) - Setzt die ID des (zuletzt) angezeigten Dialogs auf [id]				                        			#
-; #	- getDialogIndex() - Liest die (zuletzt) ausgewР“В¤hlte Zeile des Dialogs aus 				                        		#
-; #	- getDialogCaption() - Liest die Р“Сљberschrift des (zuletzt) angezeigten Dialogs aus 			                       		#
+; #	- getDialogIndex() - Liest die (zuletzt) ausgewР вЂњР’В¤hlte Zeile des Dialogs aus 				                        		#
+; #	- getDialogCaption() - Liest die Р вЂњРЎС™berschrift des (zuletzt) angezeigten Dialogs aus 			                       		#
 ; #	- getDialogText() - Liest den Text des (zuletzt) angezeigten Dialogs aus (auch bei Listen)                              	#
 ; #	- getDialogLineCount() - Liest die Anzahl der Zeilen/Items des (zuletzt) angezeigten Dialogs aus                        	#
 ; #	- getDialogLine(index) - Liest die Zeile an der Stelle [index] mittels getDialogText aus 		                        	#
-; #	- getDialogLines() - Liest die Zeilen mittels getDialogText aus (gibt ein Array zurР“Сck)			                      	#
-; #	- isDialogButton1Selected() - PrР“Сft, ob Button1 des Dialogs ausgewР“В¤hlt ist 						                       	#
+; #	- getDialogLines() - Liest die Zeilen mittels getDialogText aus (gibt ein Array zurР вЂњРЎВck)			                      	#
+; #	- isDialogButton1Selected() - PrР вЂњРЎВft, ob Button1 des Dialogs ausgewР вЂњР’В¤hlt ist 						                       	#
 ; # - getDialogStructPtr() - Liest den Base Pointer zur Dialogstruktur aus (intern genutzt)			                        	#
 ; #																									                        	#
 ; #	- showDialog(style, caption, text, button1, button2, id) - Zeigt einen Dialog an (nur lokal)	                        	#
@@ -249,8 +249,8 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; #	    - getTargetPed(dwPED)   			        Zeigt die PED-ID, des Spielers, auf den man zielt.                          #
 ; #     - getPedById(dwId)                          Zeigt die PED-Id zu der Id.                                                 #
 ; #     - getIdByPed(dwId)                          Zeigt die Id der PED-Id.                                                    #
-; #     - getStreamedInPlayersInfo()                Zeigt Informationen Р“С“Р’Сber die gestreamten Spieler.                        #
-; #     - callFuncForAllStreamedInPlayers()         FР“С“Р’Сhrt bestimmte Funktionen, fР“С“Р’Сr die gestreamten Spieler aus.          #
+; #     - getStreamedInPlayersInfo()                Zeigt Informationen Р вЂњРЎвЂњР вЂ™РЎВber die gestreamten Spieler.                        #
+; #     - callFuncForAllStreamedInPlayers()         FР вЂњРЎвЂњР вЂ™РЎВhrt bestimmte Funktionen, fР вЂњРЎвЂњР вЂ™РЎВr die gestreamten Spieler aus.          #
 ; #	    - getDist(pos1,pos2)   			            Rechnet den Abstand zwischen zwei Positionen aus.                           #
 ; #     - getClosestPlayerPed()                     Zeigt die PED-ID, des Spielers, der am nahesten zu einem steht.             #
 ; #     - getClosestPlayerId()                      Zeigt die Id, des Spielers, der am nahesten zu einem steht.                 #
@@ -301,14 +301,14 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; # 														                                                                    #
 ; # Spielerfunktionen:                                                                                                          #
 ; #     - getPlayerHealth()                         Ermittelt die HP des Spielers                                               #
-; #     - getPlayerArmour()                         Ermittelt den RР“С“Р’Сstungswert des Spielers                                  #
+; #     - getPlayerArmour()                         Ermittelt den RР вЂњРЎвЂњР вЂ™РЎВstungswert des Spielers                                  #
 ; # 	- getPlayerInteriorId()			            Ermittelt die Interior ID wo der Spieler ist 		                        #
 ; # 	- getPlayerSkinId()			                Ermittelt die Skin ID des Spielers           		                        #
 ; # 	- getPlayerMoney() 			                Ermittelt den Kontostand des Spielers (nur GTA Intern)                      #
 ; #	    - getPlayerWanteds()			            Ermittelt die Wantedanzahl des Spielers (nur bis 6 Wanteds)                 #
 ; #	    - getPlayerWeaponId()			            Ermittelt die Waffen ID des Spielers                                        #
 ; #	    - getPlayerWeaponName()			            Ermittelt den Namen, der Waffe des Spielers                                 #
-; #	    - getPlayerState()			                Ermittelt den "Status" des Spielers (Zu FuР“С“Р•С‘, Fahrer, Tot)                #
+; #	    - getPlayerState()			                Ermittelt den "Status" des Spielers (Zu FuР вЂњРЎвЂњР вЂўРЎвЂ, Fahrer, Tot)                #
 ; #	    - getPlayerMapPosX()			            Ermittelt die X-Position auf der Map im Menu                                #
 ; #	    - getPlayerMapPosY()			            Ermittelt die Y-Position auf der Map im Menu                                #
 ; #	    - getPlayerMapZoom()			            Ermittelt den Zoom auf der Map im Menu                                      #
@@ -336,26 +336,26 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; # 														                                                                    #
 ; # Standpunktbestimmung:                                                                                                       #
 ; #     - getCoordinates()                          Ermittelt die aktuelle Position (Koordinaten)                               #
-; #	    - getPlayerPos(X,Y,Z) 			            siehe oben drР“С“Р’Сber 						                                #
+; #	    - getPlayerPos(X,Y,Z) 			            siehe oben drР вЂњРЎвЂњР вЂ™РЎВber 						                                #
 ; # 														                                                                    #
 ; # --------------------------------------------------------------------------------------------------------------------------- #
 ; # 														                                                                    #
 ; #     - initZonesAndCities()                      Initialisiert eine Liste aller Standartgebiete                              #
-; #                                                 (Voraussetzung fР“С“Р’Сr die folgenden Funktionen dieser Kategorie)            #
+; #                                                 (Voraussetzung fР вЂњРЎвЂњР вЂ™РЎВr die folgenden Funktionen dieser Kategorie)            #
 ; #     - calculateZone(X, Y, Z)                    Bestimmt die Zone (= Stadtteil) aus den geg. Koordinaten                    #
 ; #     - calculateCity(X, Y, Z)                    Bestimmt die Stadt aus den geg. Koordinaten                                 #
 ; #     - getCurrentZonecode()                      Ermittelt die aktulle Zone in Kurzform                                      #
-; #     - AddZone(Name, X1, Y1, Z1, X2, Y2, Z2)     FР“С“Р’Сgt eine Zone zum Index hinzu                                           #
-; #     - AddCity(Name, X1, Y1, Z1, X2, Y2, Z2)     FР“С“Р’Сgt eine Stadt zum Index hinzu                                          #
-; #	    - IsPlayerInRangeOfPoint(X, Y, Z, Radius)   Bestimmt ob der Spieler in der NР“С“Р’В¤he der Koordinaten ist                  #
-; #	    - IsIsPlayerInRangeOfPoint2D(X, Y, Radius)  Bestimmt ob der Spieler in der NР“С“Р’В¤he der Koordinaten ist                  #
+; #     - AddZone(Name, X1, Y1, Z1, X2, Y2, Z2)     FР вЂњРЎвЂњР вЂ™РЎВgt eine Zone zum Index hinzu                                           #
+; #     - AddCity(Name, X1, Y1, Z1, X2, Y2, Z2)     FР вЂњРЎвЂњР вЂ™РЎВgt eine Stadt zum Index hinzu                                          #
+; #	    - IsPlayerInRangeOfPoint(X, Y, Z, Radius)   Bestimmt ob der Spieler in der NР вЂњРЎвЂњР вЂ™Р’В¤he der Koordinaten ist                  #
+; #	    - IsIsPlayerInRangeOfPoint2D(X, Y, Radius)  Bestimmt ob der Spieler in der NР вЂњРЎвЂњР вЂ™Р’В¤he der Koordinaten ist                  #
 ; #	    - getPlayerZone()                   				                                                                    #
 ; #	    - getPlayerCity()                   					                                                                #
 ; # 														                                                                    #
 ; ###############################################################################################################################
 ; # Sonstiges:                                                                                                                  #
 ; #     - checkHandles()                                                                                                        #
-; #     - AntiCrash()								Hilft gegen das abstР“С“Р’Сrzen bei Warningscodes                              #
+; #     - AntiCrash()								Hilft gegen das abstР вЂњРЎвЂњР вЂ™РЎВrzen bei Warningscodes                              #
 ; ###############################################################################################################################
 ; # Speicherfunktionen (intern genutzt):                                                                                        #
 ; # Memory Functions:                                                                                                           #
@@ -386,38 +386,38 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; ###############################################################################################################################
 ; # by {CM}MurKotik                                                                                                             #
 ; # Samp-UDF-Addon function        
-; #     - setCoordinates(x, y, z, Interior)         - РўРµР»РµРїРѕСЂС‚ РїРµСЂСЃРѕРЅР°Р¶Р° 
-; #     - getIP()                                   - Р’С‹РґР°С‘С‚ IP РђРґСЂРµСЃ СЃРµСЂРІРµСЂР°                                                   #
-; #     - setIP(IP)                                 - РњРµРЅСЏРµС‚ IP РђРґСЂРµСЃ РЎРµСЂРІРµСЂР°                                                   #
-; #     - getHostname()                             - Р’С‹РґР°С‘С‚ РРјСЏ СЃРµСЂРІРµСЂР°                                                        #
-; #     - setUsername(Username)                     - РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РЅРѕРІС‹Р№ РќРёРє                                                      #
-; #     - connect(IP)                               - РџРѕРґРєР»СЋС‡РёС‚СЃСЏ Рє СЃРµСЂРІРµСЂСѓ РїРѕ IP Р°РґСЂРµСЃСѓ                                        #
-; #     - colorhud(Р¦РІРµС‚)                            - РњРµРЅСЏРєРµС‚ Р·РµР»С‘РЅС‹Р№ С†РІРµС‚ РІ РёРіСЂРµ РЅР° СѓРєР°Р·Р°РЅС‹Рµ                                   #
-; #	    - setTime(hour)	                            - РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РІСЂРµРјСЏ РЅР° СЃРµСЂРІРµСЂРµ                                            #
-; #	    - getSkinID()   	                        - Р’С‹РґР°С‘С‚ ID РЎРєРёРЅР° РІР°С€РµРіРѕ РїРµСЂСЃРѕР°Р¶Р°                                           #
-; #	    - getDialogTitle() 	                        - Р’С‹РґР°С‘С‚ Р—Р°РіРѕР»РѕРІРѕРє РїРѕСЃР»РµРґРЅРµРіРѕ РґРёРѕР»РѕРіР°                                       #
-; #	    - getPlayerColor(id)                        - Р’С‹РґР°С‘С‚ ID Р¦РІРµС‚Р° РЅРёРєР° РёРіСЂРѕРєР° РїРѕ ID                                         #
-; #	    - setPlayerColor(id,color)                  - РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ С†РІРµС‚ РЅРёРєР° РёРіСЂРѕРєСѓ РїРѕ РµРіРѕ ID                                  #
-; #	    - colorToStr(color)	                        - РљРѕРЅРІРµСЂС‚Р°С†РёСЏ С†РІРµС‚Р° РёР· РґРµСЃСЏС‚РёС‡РЅРѕР№ РІ С€РµСЃС‚РЅР°РґС†Р°С‚РёСЂРёС‡РЅСѓСЋ                       #
-; #	    - getWeaponId() 	                        - Р’С‹РґР°С‘С‚ ID РѕСЂСѓР¶РёСЏ РІР°С€РµРіРѕ РїРµСЂСЃРѕРЅР°С…Р°                                         #
-; #     - restartGameEx()                           - Р РµСЃС‚Р°СЂС‚ РёРіСЂС‹ (РќРµ РѕС‚РєР»СЋС‡Р°РµС‚ РѕС‚ СЃРµСЂРІРµСЂР°)                                    #
-; #     - setrestart()                              - РЈСЃС‚Р°РЅРѕРІРёС‚СЊ СЂРµСЃС‚Р°СЂС‚РёРЅРі (РїСЂРёРјРµРЅРёС‚СЊ)                                         #
-; #     - disconnectEx()                            - РћС‚РєР»СЋС‡РµРЅРёРµ РѕС‚ СЃРµСЂРІРµСЂР°                                                     #
-; #     - writeFloat(hProcess, dwAddress, wFloat)   - Р Р°Р±РѕС‚Р° СЃ РїР°РјСЏС‚СЊСЋ РїСЂРѕС†РµСЃСЃР° РІ РґРµСЃСЏС‚РёС‡РЅРѕР№                                    #
-; #     - writeByte(hProcess, dwAddress, wInt)      - Р Р°Р±РѕС‚Р° СЃ РїР°РјСЏС‚СЊСЋ РїСЂРѕС†РµСЃСЃР° РІ РґРµСЃСЏС‚РёС‡РЅРѕР№                                    #
-; #     - FloatToHex(value)                         - Р Р°Р±РѕС‚Р° СЃ РїР°РјСЏС‚СЊСЋ РїСЂРѕС†РµСЃСЃР° РІ С€РµСЃС‚РЅР°РґС†Р°С‚РёСЂРёС‡РЅРѕР№                             #
-; #     - writeByte(hProcess, dwAddress, wInt)      - Р Р°Р±РѕС‚Р° СЃ РїР°РјСЏС‚СЊСЋ РїСЂРѕС†РµСЃСЃР° РІ С€РµСЃС‚РЅР°РґС†Р°С‚РёСЂРёС‡РЅРѕР№                             #
-; #     - IntToHex(int)                             - Р Р°Р±РѕС‚Р° СЃ РїР°РјСЏС‚СЊСЋ РїСЂРѕС†РµСЃСЃР° РІ С€РµСЃС‚РЅР°РґС†Р°С‚РёСЂРёС‡РЅРѕР№                             #
+; #     - setCoordinates(x, y, z, Interior)         - Р СћР ВµР В»Р ВµР С—Р С•РЎР‚РЎвЂљ Р С—Р ВµРЎР‚РЎРѓР С•Р Р…Р В°Р В¶Р В° 
+; #     - getIP()                                   - Р вЂ™РЎвЂ№Р Т‘Р В°РЎвЂРЎвЂљ IP Р С’Р Т‘РЎР‚Р ВµРЎРѓ РЎРѓР ВµРЎР‚Р Р†Р ВµРЎР‚Р В°                                                   #
+; #     - setIP(IP)                                 - Р СљР ВµР Р…РЎРЏР ВµРЎвЂљ IP Р С’Р Т‘РЎР‚Р ВµРЎРѓ Р РЋР ВµРЎР‚Р Р†Р ВµРЎР‚Р В°                                                   #
+; #     - getHostname()                             - Р вЂ™РЎвЂ№Р Т‘Р В°РЎвЂРЎвЂљ Р ВР СРЎРЏ РЎРѓР ВµРЎР‚Р Р†Р ВµРЎР‚Р В°                                                        #
+; #     - setUsername(Username)                     - Р Р€РЎРѓРЎвЂљР В°Р Р…Р С•Р Р†Р С‘РЎвЂљРЎРЉ Р Р…Р С•Р Р†РЎвЂ№Р в„– Р СњР С‘Р С”                                                      #
+; #     - connect(IP)                               - Р СџР С•Р Т‘Р С”Р В»РЎР‹РЎвЂЎР С‘РЎвЂљРЎРѓРЎРЏ Р С” РЎРѓР ВµРЎР‚Р Р†Р ВµРЎР‚РЎС“ Р С—Р С• IP Р В°Р Т‘РЎР‚Р ВµРЎРѓРЎС“                                        #
+; #     - colorhud(Р В¦Р Р†Р ВµРЎвЂљ)                            - Р СљР ВµР Р…РЎРЏР С”Р ВµРЎвЂљ Р В·Р ВµР В»РЎвЂР Р…РЎвЂ№Р в„– РЎвЂ Р Р†Р ВµРЎвЂљ Р Р† Р С‘Р С–РЎР‚Р Вµ Р Р…Р В° РЎС“Р С”Р В°Р В·Р В°Р Р…РЎвЂ№Р Вµ                                   #
+; #	    - setTime(hour)	                            - Р Р€РЎРѓРЎвЂљР В°Р Р…Р В°Р Р†Р В»Р С‘Р Р†Р В°Р ВµРЎвЂљ Р Р†РЎР‚Р ВµР СРЎРЏ Р Р…Р В° РЎРѓР ВµРЎР‚Р Р†Р ВµРЎР‚Р Вµ                                            #
+; #	    - getSkinID()   	                        - Р вЂ™РЎвЂ№Р Т‘Р В°РЎвЂРЎвЂљ ID Р РЋР С”Р С‘Р Р…Р В° Р Р†Р В°РЎв‚¬Р ВµР С–Р С• Р С—Р ВµРЎР‚РЎРѓР С•Р В°Р В¶Р В°                                           #
+; #	    - getDialogTitle() 	                        - Р вЂ™РЎвЂ№Р Т‘Р В°РЎвЂРЎвЂљ Р вЂ”Р В°Р С–Р С•Р В»Р С•Р Р†Р С•Р С” Р С—Р С•РЎРѓР В»Р ВµР Т‘Р Р…Р ВµР С–Р С• Р Т‘Р С‘Р С•Р В»Р С•Р С–Р В°                                       #
+; #	    - getPlayerColor(id)                        - Р вЂ™РЎвЂ№Р Т‘Р В°РЎвЂРЎвЂљ ID Р В¦Р Р†Р ВµРЎвЂљР В° Р Р…Р С‘Р С”Р В° Р С‘Р С–РЎР‚Р С•Р С”Р В° Р С—Р С• ID                                         #
+; #	    - setPlayerColor(id,color)                  - Р Р€РЎРѓРЎвЂљР В°Р Р…Р В°Р Р†Р В»Р С‘Р Р†Р В°Р ВµРЎвЂљ РЎвЂ Р Р†Р ВµРЎвЂљ Р Р…Р С‘Р С”Р В° Р С‘Р С–РЎР‚Р С•Р С”РЎС“ Р С—Р С• Р ВµР С–Р С• ID                                  #
+; #	    - colorToStr(color)	                        - Р С™Р С•Р Р…Р Р†Р ВµРЎР‚РЎвЂљР В°РЎвЂ Р С‘РЎРЏ РЎвЂ Р Р†Р ВµРЎвЂљР В° Р С‘Р В· Р Т‘Р ВµРЎРѓРЎРЏРЎвЂљР С‘РЎвЂЎР Р…Р С•Р в„– Р Р† РЎв‚¬Р ВµРЎРѓРЎвЂљР Р…Р В°Р Т‘РЎвЂ Р В°РЎвЂљР С‘РЎР‚Р С‘РЎвЂЎР Р…РЎС“РЎР‹                       #
+; #	    - getWeaponId() 	                        - Р вЂ™РЎвЂ№Р Т‘Р В°РЎвЂРЎвЂљ ID Р С•РЎР‚РЎС“Р В¶Р С‘РЎРЏ Р Р†Р В°РЎв‚¬Р ВµР С–Р С• Р С—Р ВµРЎР‚РЎРѓР С•Р Р…Р В°РЎвЂ¦Р В°                                         #
+; #     - restartGameEx()                           - Р В Р ВµРЎРѓРЎвЂљР В°РЎР‚РЎвЂљ Р С‘Р С–РЎР‚РЎвЂ№ (Р СњР Вµ Р С•РЎвЂљР С”Р В»РЎР‹РЎвЂЎР В°Р ВµРЎвЂљ Р С•РЎвЂљ РЎРѓР ВµРЎР‚Р Р†Р ВµРЎР‚Р В°)                                    #
+; #     - setrestart()                              - Р Р€РЎРѓРЎвЂљР В°Р Р…Р С•Р Р†Р С‘РЎвЂљРЎРЉ РЎР‚Р ВµРЎРѓРЎвЂљР В°РЎР‚РЎвЂљР С‘Р Р…Р С– (Р С—РЎР‚Р С‘Р СР ВµР Р…Р С‘РЎвЂљРЎРЉ)                                         #
+; #     - disconnectEx()                            - Р С›РЎвЂљР С”Р В»РЎР‹РЎвЂЎР ВµР Р…Р С‘Р Вµ Р С•РЎвЂљ РЎРѓР ВµРЎР‚Р Р†Р ВµРЎР‚Р В°                                                     #
+; #     - writeFloat(hProcess, dwAddress, wFloat)   - Р В Р В°Р В±Р С•РЎвЂљР В° РЎРѓ Р С—Р В°Р СРЎРЏРЎвЂљРЎРЉРЎР‹ Р С—РЎР‚Р С•РЎвЂ Р ВµРЎРѓРЎРѓР В° Р Р† Р Т‘Р ВµРЎРѓРЎРЏРЎвЂљР С‘РЎвЂЎР Р…Р С•Р в„–                                    #
+; #     - writeByte(hProcess, dwAddress, wInt)      - Р В Р В°Р В±Р С•РЎвЂљР В° РЎРѓ Р С—Р В°Р СРЎРЏРЎвЂљРЎРЉРЎР‹ Р С—РЎР‚Р С•РЎвЂ Р ВµРЎРѓРЎРѓР В° Р Р† Р Т‘Р ВµРЎРѓРЎРЏРЎвЂљР С‘РЎвЂЎР Р…Р С•Р в„–                                    #
+; #     - FloatToHex(value)                         - Р В Р В°Р В±Р С•РЎвЂљР В° РЎРѓ Р С—Р В°Р СРЎРЏРЎвЂљРЎРЉРЎР‹ Р С—РЎР‚Р С•РЎвЂ Р ВµРЎРѓРЎРѓР В° Р Р† РЎв‚¬Р ВµРЎРѓРЎвЂљР Р…Р В°Р Т‘РЎвЂ Р В°РЎвЂљР С‘РЎР‚Р С‘РЎвЂЎР Р…Р С•Р в„–                             #
+; #     - writeByte(hProcess, dwAddress, wInt)      - Р В Р В°Р В±Р С•РЎвЂљР В° РЎРѓ Р С—Р В°Р СРЎРЏРЎвЂљРЎРЉРЎР‹ Р С—РЎР‚Р С•РЎвЂ Р ВµРЎРѓРЎРѓР В° Р Р† РЎв‚¬Р ВµРЎРѓРЎвЂљР Р…Р В°Р Т‘РЎвЂ Р В°РЎвЂљР С‘РЎР‚Р С‘РЎвЂЎР Р…Р С•Р в„–                             #
+; #     - IntToHex(int)                             - Р В Р В°Р В±Р С•РЎвЂљР В° РЎРѓ Р С—Р В°Р СРЎРЏРЎвЂљРЎРЉРЎР‹ Р С—РЎР‚Р С•РЎвЂ Р ВµРЎРѓРЎРѓР В° Р Р† РЎв‚¬Р ВµРЎРѓРЎвЂљР Р…Р В°Р Т‘РЎвЂ Р В°РЎвЂљР С‘РЎР‚Р С‘РЎвЂЎР Р…Р С•Р в„–                             #
 ; ###############################################################################################################################
 ; ###############################################################################################################################
 ; # by McFree                                                                                                            #
 ; # Samp-UDF-Addon function        
-; #     - getPlayerPosById(dwid)         - РїРѕР»СѓС‡РёС‚СЊ РєРѕРѕСЂРґРёРЅР°С‚С‹ РїРµСЂСЃРѕРЅР°Р¶Р° РїРѕ ID
-; #     - addChatMessageEx(Color, wText)         - РћС‚РїСЂР°РІРёС‚СЊ С„РµР№Рє СЃРѕРѕР±С‰РµРЅРёРµ СЃ РїРѕР»РЅРѕР№ Р·Р°РјРµРЅРѕР№ С†РІРµС‚Р° (РІРєР»СЋС‡Р°СЏ timestamp)
-; #     - HexToDec(Hex)         - РџРµСЂРµРІРѕРґ С€РµСЃС‚РЅР°РґС†Р°С‚РёСЂРёС‡РЅРѕРіРѕ С‡РёСЃР»Р° РІ РґРµСЃСЏС‚РёС‡РЅРѕРµ
-; #     - hex2rgb(CR )      - РџРµСЂРµРІРѕРґ С€РµСЃС‚РЅР°РґС†Р°С‚РёСЂРёС‡РЅРѕРіРѕ С†РІРµС‚Р° РІ rgb СЃС‚СЂРѕРєСѓ (255,255,255)
-; #     - rgb2hex(R, G, B)         - РџРµСЂРµРІРѕРґ RGB С†РІРµС‚Р° РІ С€РµСЃС‚РЅР°РґС†Р°С‚РёСЂРёС‡РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ (FFFFFF)
-; #     - NearPlayerInCar(dist)         - РќР°С…РѕР¶РґРµРЅРёРµ Р±Р»РёР¶Р°Р№С€РµРіРѕ РІРѕРґРёС‚РµР»СЏ РЅР° РѕРїСЂРµРґРµР»РµРЅРЅРѕРј СЂР°СЃСЃС‚РѕСЏРЅРёРё
+; #     - getPlayerPosById(dwid)         - Р С—Р С•Р В»РЎС“РЎвЂЎР С‘РЎвЂљРЎРЉ Р С”Р С•Р С•РЎР‚Р Т‘Р С‘Р Р…Р В°РЎвЂљРЎвЂ№ Р С—Р ВµРЎР‚РЎРѓР С•Р Р…Р В°Р В¶Р В° Р С—Р С• ID
+; #     - addChatMessageEx(Color, wText)         - Р С›РЎвЂљР С—РЎР‚Р В°Р Р†Р С‘РЎвЂљРЎРЉ РЎвЂћР ВµР в„–Р С” РЎРѓР С•Р С•Р В±РЎвЂ°Р ВµР Р…Р С‘Р Вµ РЎРѓ Р С—Р С•Р В»Р Р…Р С•Р в„– Р В·Р В°Р СР ВµР Р…Р С•Р в„– РЎвЂ Р Р†Р ВµРЎвЂљР В° (Р Р†Р С”Р В»РЎР‹РЎвЂЎР В°РЎРЏ timestamp)
+; #     - HexToDec(Hex)         - Р СџР ВµРЎР‚Р ВµР Р†Р С•Р Т‘ РЎв‚¬Р ВµРЎРѓРЎвЂљР Р…Р В°Р Т‘РЎвЂ Р В°РЎвЂљР С‘РЎР‚Р С‘РЎвЂЎР Р…Р С•Р С–Р С• РЎвЂЎР С‘РЎРѓР В»Р В° Р Р† Р Т‘Р ВµРЎРѓРЎРЏРЎвЂљР С‘РЎвЂЎР Р…Р С•Р Вµ
+; #     - hex2rgb(CR )      - Р СџР ВµРЎР‚Р ВµР Р†Р С•Р Т‘ РЎв‚¬Р ВµРЎРѓРЎвЂљР Р…Р В°Р Т‘РЎвЂ Р В°РЎвЂљР С‘РЎР‚Р С‘РЎвЂЎР Р…Р С•Р С–Р С• РЎвЂ Р Р†Р ВµРЎвЂљР В° Р Р† rgb РЎРѓРЎвЂљРЎР‚Р С•Р С”РЎС“ (255,255,255)
+; #     - rgb2hex(R, G, B)         - Р СџР ВµРЎР‚Р ВµР Р†Р С•Р Т‘ RGB РЎвЂ Р Р†Р ВµРЎвЂљР В° Р Р† РЎв‚¬Р ВµРЎРѓРЎвЂљР Р…Р В°Р Т‘РЎвЂ Р В°РЎвЂљР С‘РЎР‚Р С‘РЎвЂЎР Р…Р С•Р Вµ Р В·Р Р…Р В°РЎвЂЎР ВµР Р…Р С‘Р Вµ (FFFFFF)
+; #     - NearPlayerInCar(dist)         - Р СњР В°РЎвЂ¦Р С•Р В¶Р Т‘Р ВµР Р…Р С‘Р Вµ Р В±Р В»Р С‘Р В¶Р В°Р в„–РЎв‚¬Р ВµР С–Р С• Р Р†Р С•Р Т‘Р С‘РЎвЂљР ВµР В»РЎРЏ Р Р…Р В° Р С•Р С—РЎР‚Р ВµР Т‘Р ВµР В»Р ВµР Р…Р Р…Р С•Р С РЎР‚Р В°РЎРѓРЎРѓРЎвЂљР С•РЎРЏР Р…Р С‘Р С‘
 ; ###############################################################################################################################
 
 API_ERROR_NONE 								:= 0
@@ -457,7 +457,7 @@ try {
     hModule := DllCall("LoadLibrary", Str, PATH_API)
     if(hModule == -1 || hModule == 0)
     {
-        ;MsgBox, 48, API.DLL РЅРµ Р±С‹Р» РЅР°Р№РґРµРЅ. РџСЂРѕРІРµСЂСЊС‚Рµ РїРѕРґРєР»СЋС‡РµРЅРёРµ Р±РёР±Р»РёРѕС‚РµРєРё
+        ;MsgBox, 48, API.DLL Р Р…Р Вµ Р В±РЎвЂ№Р В» Р Р…Р В°Р в„–Р Т‘Р ВµР Р…. Р СџРЎР‚Р С•Р Р†Р ВµРЎР‚РЎРЉРЎвЂљР Вµ Р С—Р С•Р Т‘Р С”Р В»РЎР‹РЎвЂЎР ВµР Р…Р С‘Р Вµ Р В±Р С‘Р В±Р В»Р С‘Р С•РЎвЂљР ВµР С”Р С‘
     }
 } catch() 
 {
@@ -1574,7 +1574,7 @@ getIP() {
     return ipAddr
 }
 
-; РЎРјРµРЅР° Ip РЎРµСЂРІРµСЂР°
+; Р РЋР СР ВµР Р…Р В° Ip Р РЋР ВµРЎР‚Р Р†Р ВµРЎР‚Р В°
 setIP(IP) {
     if(!checkHandles())
         return False
@@ -2614,6 +2614,33 @@ getClosestPlayerIdM() {
     return id
 }
 
+getClosestPlayerIdNotBiker() 
+{
+global
+dist := 0x16
+p := getStreamedInPlayersInfo()
+if (!p)
+return, -1
+lpos := getCoordinates()
+if (!lpos)
+return, -1
+id := -1
+For i, o in p
+{
+	
+	if (!RegExMatch(skinID,"i)\b" getSkinByID(i) "\b"))
+	{
+		t := getDist(lpos, o.POS)
+		if (t < dist)
+		{
+			dist := t
+			id := i
+		}
+	}
+}
+return id
+}
+
 CountOnlinePlayers() {
 if(!checkHandles())
 return -1
@@ -3151,7 +3178,7 @@ getTargetVehicleSpeedByPed(dwPED) {
     fSpeedZ := readMem(hGTA, dwAddr + ADDR_VEHICLE_Z, 4, "float")
     
     fVehicleSpeed :=  sqrt((fSpeedX * fSpeedX) + (fSpeedY * fSpeedY) + (fSpeedZ * fSpeedZ))
-    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhР“С“Р’В¶ht bzw. verringert
+    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhР вЂњРЎвЂњР вЂ™Р’В¶ht bzw. verringert
  
 	return fVehicleSpeed
 }
@@ -3167,7 +3194,7 @@ getTargetVehicleSpeedById(dwId) {
     fSpeedZ := readMem(hGTA, dwAddr + ADDR_VEHICLE_Z, 4, "float")
     
     fVehicleSpeed :=  sqrt((fSpeedX * fSpeedX) + (fSpeedY * fSpeedY) + (fSpeedZ * fSpeedZ))
-    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhР“С“Р’В¶ht bzw. verringert
+    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhР вЂњРЎвЂњР вЂ™Р’В¶ht bzw. verringert
  
 	return fVehicleSpeed
 }
@@ -4082,7 +4109,7 @@ getVehicleSpeed() {
     fSpeedZ := readMem(hGTA, dwAddr + ADDR_VEHICLE_Z, 4, "float")
     
     fVehicleSpeed :=  sqrt((fSpeedX * fSpeedX) + (fSpeedY * fSpeedY) + (fSpeedZ * fSpeedZ))
-    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhР“С“Р’В¶ht bzw. verringert
+    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhР вЂњРЎвЂњР вЂ™Р’В¶ht bzw. verringert
  
 	return fVehicleSpeed
 }
@@ -5717,3 +5744,4 @@ last := A_LoopReadLine
 }
 return last
 }
+
